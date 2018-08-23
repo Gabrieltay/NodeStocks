@@ -19,7 +19,7 @@ const optionalParams = {
 // Register listener
 slimbot.on('message', message => {
 	console.log(message.text);
-	slimbot.sendMessage(message.chat.id, 'Message received' + JSON.stringify(message.text), optionalParams);
+	slimbot.sendMessage(message.chat.id, 'Pick Your ETF 😎', optionalParams);
 });
 
 slimbot.on('callback_query', query => {
