@@ -7,7 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => debug(`Listening on port ${PORT}`));
 
-const slimbot = new Slimbot(process.env['TELEGRAM_BOT_TOKEN'] || '570759765:AAFYXd4HeeD7uAwpD4dVto-rXeTT_cwwrRE');
+const slimbot = new Slimbot(process.env['TELEGRAM_BOT_TOKEN']);
 
 const optionalParams = {
 	parse_mode: 'Markdown',
